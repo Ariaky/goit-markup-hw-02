@@ -14,8 +14,9 @@
 }
 
 body {
-    font-family: Roboto, sans sans-serif;
+    font-family: Roboto, sans-serif;
     color: var(--body-text-color);
+    background-color: var(--white-background-text-color);
 }
 
 /* Components */
@@ -50,6 +51,15 @@ body {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
 
 /* Navigation menu */
 .logo {
@@ -64,6 +74,7 @@ body {
 
 .logo-text {
     color: var(--dark-color);
+    font-family: 'Raleway', sans serif;
 }
 
 .menu-link {
@@ -75,9 +86,11 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: var(--primary-brand-color);
+    color: var(--pressed-state-color);
 }
-
+.contact {
+    font-style: normal;
+}
 .contact-link {
     font-style: normal;
     font-weight: 400;
@@ -88,7 +101,7 @@ body {
 }
 .contact-link:hover,
 .contact-link:focus {
-    color: var(--primary-brand-color);
+    color: var(--pressed-state-color);
 }
 
 /* Hero main page */
@@ -101,9 +114,11 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--white-background-text-color)
 }
 .hero-btn {
+    font-family: 'Roboto', sans serif ;
     width: 169px;
     height: 56px;
     left: 636px;
@@ -113,10 +128,23 @@ body {
     border-radius: 4px;
     color: var(--white-background-text-color);
 }
+.hero-btn:hover{
+    background-color: var(--pressed-state-color);
+}
+
+/*Our team */
+
+.team {
+    background-color: var(--light-mode-color);
+}
+.team-item {
+    background-color: var(--white-background-text-color);
+}
 
 /* Filters */
 
 .filter-btn {
+    font-family: 'Roboto', sans serif;
     background: var(--light-mode-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
@@ -126,4 +154,9 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--white-background-text-color);
+}
+
+/* Footer */
+.footer{
+    background-color: var(--dark-color);
 }
